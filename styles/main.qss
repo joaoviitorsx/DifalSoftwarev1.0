@@ -1,0 +1,291 @@
+/* ============================
+   Estilos Gerais
+============================ */
+QWidget {
+    font-family: 'Inter', sans-serif;
+    color: #E0E0E0;
+}
+
+QMainWindow {
+    background: #181818;
+}
+
+/* ============================
+   Estilos de Containers
+============================ */
+#glassCard {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    min-width: 400px;
+    max-width: 500px;
+    padding: 20px;
+}
+
+QFrame#cardContainer {
+    background-color: #222222;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #D1D1D1;
+}
+
+QFrame#infoEmpresaContainer {
+    background-color: rgb(65, 60, 60); /* Cinza claro suave */
+    border-radius: 8px;
+    padding: 12px;
+}
+
+QFrame#uploadCard {
+    border: 2px dashed #BDBDBD;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(65, 60, 60);
+}
+
+/* ============================
+   Tipografia
+============================ */
+#welcomeTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #E0E0E0;
+}
+
+#welcomeSubtitle, #appName {
+    font-size: 14px;
+    color: #B0B0B0;
+}
+
+#headerTitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: #E0E0E0;
+}
+
+QLabel#empresaNome {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+QLabel#empresaCNPJ {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+}
+
+QLabel#aliquotaDestaque {
+    background-color: #E3F2FD; /* Azul claro */
+    color: #0D47A1; /* Azul escuro */
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 6px;
+}
+
+QLabel#uploadTitulo {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+/* ============================
+   Formulários
+============================ */
+QLineEdit, QComboBox {
+    border: 1px solid #3A3A3A;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background-color: #222222;
+    color: #E0E0E0;
+}
+
+QLineEdit:focus, QComboBox:focus {
+    border: 1px solid #D32F2F;
+}
+
+/* ============================
+   SelectBox
+============================ */
+
+QComboBox#comboEmpresas {
+    background-color: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    color: #333333;
+    selection-background-color: #007BFF;
+    selection-color: white;
+}
+
+/* Efeito hover */
+QComboBox#comboEmpresas:hover {
+    border: 1px solid #007BFF;
+    background-color: #F5F5F5;
+}
+
+/* Foco no campo */
+QComboBox#comboEmpresas:focus {
+    border: 2px solid #0056b3;
+    background-color: #FFFFFF;
+}
+
+/* Área do dropdown */
+QComboBox QAbstractItemView {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #D1D1D1;
+    padding: 5px;
+    selection-background-color: #007BFF;
+    selection-color: white;
+}
+
+/* Itens da lista suspensa */
+QComboBox QAbstractItemView::item {
+    padding: 10px;
+    font-size: 14px;
+    color: #333333;
+    border-radius: 5px;
+}
+
+/* Efeito suave ao passar o mouse */
+QComboBox QAbstractItemView::item:hover {
+    background-color: #E3F2FD;
+    color: #007BFF;
+}
+
+QComboBox#comboEmpresas::down-arrow {
+    image: none;
+    width: 0px;
+    height: 0px;
+}
+
+QComboBox#comboEmpresas::drop-down {
+    border: none;
+    background: transparent;
+    width: 0px;
+}
+
+/* ============================
+   Botões
+============================ */
+QPushButton {
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-weight: 500;
+    background-color: #D32F2F; /* Vermelho padrão */
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #B71C1C; /* Vermelho escuro */
+}
+
+/* Botão "Cadastrar" */
+QPushButton#botaoPrimario {
+    background-color: #D32F2F; /* Vermelho */
+    color: white;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
+}
+
+QPushButton#botaoPrimario:hover {
+    background-color: #B71C1C; /* Vermelho escuro */
+}
+
+/* Botão "Voltar" */
+QPushButton#botaoSecundario {
+    background-color: #D32F2F; /* Vermelho */
+    color: white;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: bold;
+}
+
+QPushButton#botaoSecundario:disabled {
+    background-color: #B0BEC5; /* Cinza desativado */
+    color: #ECEFF1;
+}
+
+QPushButton#botaoSecundario:hover:!disabled {
+    background-color: #B71C1C; /* Vermelho escuro */
+}
+
+/* Botão "Prosseguir" */
+QPushButton#botaoPrincipal {
+    background-color: #1976D2; /* Azul */
+    color: white;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: bold;
+}
+
+QPushButton#botaoPrincipal:hover {
+    background-color: #1565C0; /* Azul escuro */
+}
+
+QPushButton#botaoPrincipal:disabled{
+    background-color: #D6D6D6; /* Cinza mais escuro */
+}
+
+/* Botão "Processar" */
+QPushButton#botaoProcessar {
+    background-color: #1976D2; /* Azul */
+    color: white;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: bold;
+}
+
+QPushButton#botaoProcessar:hover {
+    background-color: #1565C0; /* Azul escuro */
+}
+
+/* Botão "Upload" */
+QPushButton#botaoUpload {
+    background-color: #E0E0E0; /* Cinza claro */
+    color: #333333;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+QPushButton#botaoUpload:hover {
+    background-color: #D6D6D6; /* Cinza mais escuro */
+}
+
+/* ============================
+   Progress Bar
+============================ */
+QProgressBar {
+    border: 1px solid #3A3A3A;
+    border-radius: 4px;
+    text-align: center;
+    height: 16px;
+    background-color: #222222;
+}
+
+QProgressBar::chunk {
+    background-color: #D32F2F;
+    border-radius: 3px;
+}
+
+/* ============================
+   Outros
+============================ */
+QFrame[frameShape="4"] {
+    border: 1px solid #E0E0E0;
+    margin: 5px 0;
+}
+
+/* ============================
+   GlassCard
+============================ */
+
+#glassCard {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    padding: 20px;
+}
